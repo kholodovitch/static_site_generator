@@ -5,7 +5,6 @@ import org.apache.commons.cli.CommandLineParser;
 import org.apache.commons.cli.DefaultParser;
 import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Options;
-import org.apache.commons.cli.ParseException;
 
 public class App {
 	private static Options options;
@@ -19,7 +18,7 @@ public class App {
 		options.addOption("o", true, "output folder");
 	}
 
-	public static void main(String[] args) throws ParseException {
+	public static void main(String[] args) throws Exception {
 		if (args.length == 0)
 			help();
 		
